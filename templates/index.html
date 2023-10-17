@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+{% block menu  %}
+    {% include 'includes/nav.html' %}
+{% endblock menu  %}
+<body>
+    {% block content %}
+    <h2>Главная страница</h2>
+    <h1 style="color: brown"><span class="badge bg-secondary">Привет, <span style="color: dodgerblue">{{ user_f_name }} {{ user_l_name }}!</span></span></h1>
+    {% endblock content %}
+</body>
+</html>
